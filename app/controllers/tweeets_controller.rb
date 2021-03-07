@@ -6,6 +6,7 @@ class TweeetsController < ApplicationController
   def index
     @tweeets = Tweeet.all
     @tweeet = Tweeet.new
+    @current_user = current_user
   end
 
   # GET /tweeets/1 or /tweeets/1.json
